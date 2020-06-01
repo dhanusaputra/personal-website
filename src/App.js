@@ -1,8 +1,11 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>nothing personal here</div>
+    <BrowserRouter basename='/'>
+      <div>nothing personal here</div>
+    </BrowserRouter>
   )
 }
 
