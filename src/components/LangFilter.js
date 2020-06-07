@@ -1,16 +1,17 @@
 import React from 'react'
 import { langChange } from '../reducers/langReducer'
 import { useDispatch } from 'react-redux'
+import { Radio } from 'antd'
 
 const LangFilter = () => {
   const dispatch = useDispatch()
 
   return (
     <div>
-      ID
-      <input type='radio' name='lang' onChange={() => dispatch(langChange('ID'))} />
-      EN
-      <input type='radio' name='lang' onChange={() => dispatch(langChange('EN'))} />
+      <Radio.Group defaultValue='ID' size='large'>
+        <Radio.Button value='ID' onChange={() => dispatch(langChange('ID'))}>ID</Radio.Button>
+        <Radio.Button value='EN' onChange={() => dispatch(langChange('EN'))}>EN</Radio.Button>
+      </Radio.Group>
     </div>
   )
 }
