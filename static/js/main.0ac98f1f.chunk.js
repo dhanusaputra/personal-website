@@ -1,2 +1,2 @@
 (this["webpackJsonppersonal-website"]=this["webpackJsonppersonal-website"]||[]).push([[0],{11:function(e,n,t){e.exports=t(22)},16:function(e,n,t){},22:function(e,n,t){"use strict";t.r(n);var a=t(0),r=t.n(a),o=t(8),l=t.n(o),s=(t(16),t(10)),c=function(){return r.a.createElement(s.a,{basename:"/"},r.a.createElement("div",null,"nothing personal here"))};l.a.render(r.a.createElement(r.a.StrictMode,null,r.a.createElement(c,null)),document.getElementById("root"))}},[[11,1,2]]]);
-//# sourceMappingURL=main.bda1e671.chunk.js.map
+//# sourceMappingURL=main.0ac98f1f.chunk.js.map
