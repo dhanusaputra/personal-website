@@ -1,14 +1,15 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import LangFilter from './components/LangFilter'
+import { withTranslation } from 'react-i18next/hooks'
 
-const App = () => {
+const App = ({ t }) => {
   return (
     <BrowserRouter basename='/'>
       <LangFilter />
-      <div>nothing personal here</div>
+      {t('nothing')}
     </BrowserRouter>
   )
 }
 
-export default App
+export default withTranslation()(App)
