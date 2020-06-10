@@ -1,4 +1,4 @@
-const langReducer = (state = 'ID', action) => {
+const langReducer = (state = 'id', action) => {
   switch (action.type) {
   case 'SET_LANG':
     return action.lang
