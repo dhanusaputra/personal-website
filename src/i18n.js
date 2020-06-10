@@ -1,16 +1,15 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next/hooks'
 
+import translationID from './locales/id/translation.json'
+import translationEN from './locales/en/translation.json'
+
 const resources = {
   en: {
-    translation: {
-      'nothing': 'nothing personal here'
-    }
+    translation: translationEN
   },
   id: {
-    translation: {
-      'nothing': 'tidak ada yang personal di sini'
-    }
+    translation: translationID
   }
 }
 
