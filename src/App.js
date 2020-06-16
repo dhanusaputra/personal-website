@@ -12,12 +12,12 @@ const App = ({ t }) => {
 
   return (
     <BrowserRouter basename='/'>
-      <Layout className='layout'>
+      <Layout className='layout' style={{ padding: '100px 650px 100px 150px', backgroundColor: 'white' }}>
         <Layout.Header style={{ textAlign: 'right' }}>
           <LangFilter handleChange={changeLng} />
         </Layout.Header>
-        <Layout.Content style={{ padding: '50px 50px 50px 100px' }}>
-          <div className='site-layout-content'>
+        <Layout.Content style={{ padding: '50px 50px 50px 50px', backgroundColor: '#f5f5f5' }}>
+          <div style ={{ textAlign: 'center' }} className='site-layout-content'>
             {t('nothing')}
           </div>
         </Layout.Content>
