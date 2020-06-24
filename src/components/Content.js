@@ -11,7 +11,7 @@ const Content = ({ t }) => {
 
   return (
     <div>
-      {t('something')}
+      {t('nothing')}
     </div>
   )
 }
