@@ -7,9 +7,11 @@ const LangFilter = (props) => {
   return (
     <div>
       <Radio.Group defaultValue='ID' size='large'>
-        {langs.map(lang =>
-          <Radio.Button key={ lang.id } value={ lang.id.toUpperCase() } onChange={() => props.handleChange(lang.id)}>{ lang.id.toUpperCase() }</Radio.Button>
-        )}
+        {langs
+          .sort((a, b) => a.id > b.id)
+          .map(lang =>
+            <Radio.Button key={ lang.id } value={ lang.id.toUpperCase() } onChange={() => props.handleChange(lang.id)}>{ lang.id.toUpperCase() }</Radio.Button>
+          )}
       </Radio.Group>
     </div>
   )
