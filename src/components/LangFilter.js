@@ -3,15 +3,13 @@ import { Radio } from 'antd'
 import { useSelector } from 'react-redux'
 
 const LangFilter = (props) => {
-  const langs = useSelector(state => state)
+  const langs = useSelector(state => state).sort((a, b) => a.id > b.id)
   return (
     <div>
       <Radio.Group defaultValue='ID' size='large'>
         {langs
-          .sort((a, b) => a.id > b.id)
           .map(lang =>
-            <Radio.Button key={ lang.id } value={ lang.id.toUpperCase() } onChange={() => props.handleChange(lang.id)}>{ lang.id.toUpperCase() }</Radio.Button>
-          )}
+            <Radio.Button key={ lang.id } value={ lang.id.toUpperCase() } onChange={() => props.handleChange(lang.id)}>{ lang.id.toUpperCase() }</Radio.Button>)}
       </Radio.Group>
     </div>
   )
