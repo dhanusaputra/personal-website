@@ -17,7 +17,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'id',
+    lng: 'en',
   })
 
 export default i18n
