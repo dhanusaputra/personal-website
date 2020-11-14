@@ -6,7 +6,7 @@ const defaultSomethings = [{ id: 'en', description: '{"nothing":"nothing persona
 
 const getAll = async () => {
   try {
-    const res = await axios.get(`${baseUrl}/v1/something`, { timeout: 5000 })
+    const res = await axios.get(`${baseUrl}/v1/something`, { timeout: 10000 })
     return res.data.somethings
   } catch(err) {
     console.error(err)
