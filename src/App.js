@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import { initLang } from './reducers/langReducer'
 import langService from './services/languages'
 import { useSelector } from 'react-redux'
+import { useMediaQuery  } from 'react-responsive'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -24,9 +25,12 @@ const App = () => {
 
   const langs = useSelector(state => state)
 
+  const isBigScreen = useMediaQuery({ query: '(min-device-width: 1000px)'  })
+  const layoutStyle = isBigScreen ? { padding: '10% 50% 10% 10%', backgroundColor: 'white' } : { backgroundColor: 'white' }
+
   return (
     <BrowserRouter basename='/'>
-      <Layout className='layout' style={{ padding: '10% 50% 10% 10%', backgroundColor: 'white' }}>
+      <Layout className='layout' style={layoutStyle}>
         <Spin tip='loading...' spinning={ langs.length <=  0 }>
           <Layout.Header style={{ textAlign: 'right' }}>
             <LangFilter handleChange={changeLang} />
