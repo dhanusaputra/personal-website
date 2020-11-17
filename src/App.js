@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <BrowserRouter basename='/'>
-      <Layout className='layout' style={{ padding: '100px 650px 100px 150px', backgroundColor: 'white' }}>
+      <Layout className='layout' style={{ padding: '10% 50% 10% 10%', backgroundColor: 'white' }}>
         <Spin tip='loading...' spinning={ langs.length <=  0 }>
           <Layout.Header style={{ textAlign: 'right' }}>
             <LangFilter handleChange={changeLang} />
