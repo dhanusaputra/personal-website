@@ -25,7 +25,7 @@ const App = () => {
 
   const langs = useSelector(state => state)
 
-  const isBigScreen = useMediaQuery({ query: '(min-device-width: 1000px)'  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1000px)'  })
   const layoutStyle = isBigScreen ? { padding: '10% 50% 10% 10%', backgroundColor: 'white' } : { backgroundColor: 'white' }
 
   return (
