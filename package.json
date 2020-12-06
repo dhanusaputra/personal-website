@@ -4,9 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "antd": "^4.3.2",
     "axios": "^0.19.2",
     "i18next": "^19.4.5",
@@ -46,7 +43,10 @@
   "devDependencies": {
     "eslint-plugin-jest": "^23.13.2",
     "gh-pages": "^3.0.0",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1"
   },
   "jest": {
     "transformIgnorePatterns": [
