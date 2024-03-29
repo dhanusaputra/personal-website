@@ -45,7 +45,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "cypress": "^6.0.1",
+    "cypress": "^13.7.1",
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-jest": "^23.13.2",
     "gh-pages": "^3.0.0",
