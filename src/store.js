@@ -1,11 +1,11 @@
-import { createStore } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
+import { configureStore } from '@reduxjs/toolkit';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-import langReducer from './reducers/langReducer'
+import langReducer from './reducers/langReducer';
 
-const store = createStore(
-  langReducer,
-  composeWithDevTools()
-)
+const store = configureStore({
+  reducer: langReducer,
+  devTools: composeWithDevTools(),
+});
 
-export default store
+export default store;
