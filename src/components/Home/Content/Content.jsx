@@ -1,5 +1,5 @@
 import React from 'react';
-import { withTranslation } from 'react-i18next/hooks';
+import { withTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import i18n from '../../../i18n';
 
