@@ -56,5 +56,9 @@
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|@?react-navigation)"
     ]
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.47"
   }
 }
